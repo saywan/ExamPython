@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    ;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../static/images/pexels-nguyendesigner-243971.jpg);
+    background-size: cover;
+}
+
+h1{
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-shadow: 5px 5px 1px #151414;
+}
+
+.container{
+    background-color: #a4b0be;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: -10px 10px 20px 20px#161616;
+    opacity: 0.8;
+    border: 3px solid white;
+    opacity: 0.9;
+
+}
+
+.addtodolist{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+input{
+    align-items: center;
+    border: none;
+    padding: 1rem;
+    width: 80%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: inset -3px -3px 5px 0.5px rgb(84, 81, 81) ;
+    background-color: #151414;
+}
+
+input:focus{
+    background-color: #ffffff;
+}
+
+
+input::placeholder{
+    color: rgb(255, 0, 0);
+}
+
+#button{
+    align-items: center;
+    border: none;
+    background-color: #EA2027;
+    color: white;
+    padding: 1rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+button:active{
+    transform: translate(-1.5px , -1.5px);
+    box-shadow:-3px -3px 10px 0.5px rgb(229, 216, 216) ;
+}
+
+.todolist{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 60%;
+    overflow-y: scroll;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.item {
+    background-color: #EA2027;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.item:hover{
+    background-color: rgb(192, 186, 186);
+    text-decoration: line-through;
+}
+
+button.remove{
+    background-color: #352e2e;
+    border: none;
+    padding: 4px 6px;
+    border-radius: 50%;
+}
+
+button.remove:hover{
+    background-color: #ffffff;
+    box-shadow: 0.5px 0.5px 1px 1px#151414;
+}
+
+i{
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #352e2e;
+}
+
+i.fa-trash-alt:hover{
+    color: red;
+    background-color: #ffffff;
+}
+
+
+
+
+
+
+
